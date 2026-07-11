@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: jupyter-tiler
-  version: "0.8.0"
-  sha256: "d00ce037e7d589419d14cc48e382f501c81c5100368591d4104fc10102d1df2e"
+  version: "0.8.1"
+  sha256: "f53dd5c56c7252f94fd138d5bfce470224c4dac7c66ef6e483d5d3892a865141"
   build_number: 0
   python_min: "3.12"
 
@@ -16,7 +16,7 @@ source:
   sha256: ${{ sha256 }}
 
 build:
-  number: ${{ build_number }} 
+  number: ${{ build_number }}
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
