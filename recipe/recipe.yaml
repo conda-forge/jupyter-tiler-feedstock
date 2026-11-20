@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: jupyter-tiler
-  version: "0.9.0"
-  sha256: "526e54492ed48f80ae44c5c3b797889d769e10f68e5e95fc359e902f939e0051"
+  version: "0.10.0"
+  sha256: "2abb62723337baebd086a2a6339087bf2d4919b5ffa9bba24604c71ac4615265"
   build_number: 0
   python_min: "3.12"
 
@@ -35,8 +35,11 @@ requirements:
     - anycorn >=0.18.0
     - rioxarray >=0.19.0
     - geopandas >=1.0.0
+    - pystac-client >=0.9
+    - stackstac >=0.5
     - titiler-core >=1.1.1
     - titiler-xarray >=1.1.1
+    - titiler-stacapi >=2.0.2
     - xpublish-tiles >=0.4.2
 
 tests:
